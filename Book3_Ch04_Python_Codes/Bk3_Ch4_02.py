@@ -10,9 +10,9 @@
 
 from sympy.abc import x,y
 
-expr = x**3 + 2*x**2 - x - 2
+expr_x = x**3 + 2*x**2 - x - 2
 
-print(expr.subs(x,1))
+print(expr_x.subs(x,1))
 
 # Bk_Ch4_02_B
 
