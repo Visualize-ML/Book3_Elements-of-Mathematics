@@ -18,5 +18,5 @@ print(mp.pi)
 print('print 1000 digits of e behind decimal point')
 print(mp.e)
 
-print('print 1000 digits of e behind decimal point')
+print('print 1000 digits of sqrt(2) behind decimal point')
 print(mp.sqrt(2))
