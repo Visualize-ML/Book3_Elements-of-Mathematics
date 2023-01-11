@@ -77,6 +77,9 @@ else:
     
     approx_f_fcn = lambdify(x,approx_f)
     approx_f_array = approx_f_fcn(x_t_array)
+    
+if type(approx_f_array) == float:
+    approx_f_array = approx_f_array + x_t_array*0
 
 ax.plot(x_t_array, approx_f_array, linewidth = 0.25, color = 'r') 
 ax.plot(x_0,y_0,marker = '.', color = 'r',

@@ -54,7 +54,7 @@ for i in np.arange(len(x_0_array)):
     
     a = f_x_2_diff.evalf(subs = {x: x_0})
     
-    second_order_f = a*(x - x_0)**2 + b*(x - x_0) + y_0
+    second_order_f = a/2*(x - x_0)**2 + b*(x - x_0) + y_0
     
     second_order_f_fcn = lambdify(x,second_order_f)
     second_order_f_array = second_order_f_fcn(x_t_array)
@@ -104,7 +104,7 @@ for i in np.arange(len(x_0_array)):
     
     a = f_x_2_diff.evalf(subs = {x: x_0})
     
-    second_order_f = a*(x - x_0)**2 + b*(x - x_0) + y_0
+    second_order_f = a/2*(x - x_0)**2 + b*(x - x_0) + y_0
     
     second_order_f_fcn = lambdify(x,second_order_f)
     second_order_f_array = second_order_f_fcn(x_t_array)
