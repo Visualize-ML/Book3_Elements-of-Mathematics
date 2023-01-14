@@ -73,7 +73,7 @@ if option_i == 'First-order approximation':
     
 else:
 
-    approx_f = a*(x - x_0)**2 + b*(x - x_0) + y_0
+    approx_f = a/2*(x - x_0)**2 + b*(x - x_0) + y_0
     
     approx_f_fcn = lambdify(x,approx_f)
     approx_f_array = approx_f_fcn(x_t_array)
