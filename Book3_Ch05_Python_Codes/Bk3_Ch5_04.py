@@ -21,7 +21,7 @@ def plot_polar(theta, r):
     ax.set_rticks([5, 10, 15, 20])  
     # position radial labels
     ax.set_rlabel_position(-45)  
-    ax.set_thetagrids(np.arange(0.0, 360.0, 45.0),linestyle = '--'); 
+    ax.set_thetagrids(np.arange(0.0, 360.0, 45.0)); 
     plt.show()
     
 #%% circle
