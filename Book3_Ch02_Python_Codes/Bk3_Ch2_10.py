@@ -87,7 +87,7 @@ plt.title('$C_1$')
 plt.yticks(rotation=0) 
 
 plt.sca(axs[1])
-plt.title('$@$')
+plt.title('$+$')
 plt.axis('off')
 
 plt.sca(axs[2])
@@ -99,7 +99,7 @@ plt.title('$C_2$')
 plt.yticks(rotation=0) 
 
 plt.sca(axs[3])
-plt.title('$@$')
+plt.title('$+$')
 plt.axis('off')
 
 plt.sca(axs[4])
