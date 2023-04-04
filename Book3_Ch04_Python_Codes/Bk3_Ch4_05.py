@@ -29,7 +29,6 @@ for n in [4, 8, 12, 5, 9, 13, 36]:
     fig, ax = plt.subplots()
     
     plt.stem(degrees, np.array(poly_coeffs, dtype=float))
-    plt.show()
     plt.xlim(0,n)
     plt.xticks(np.arange(0,n+1))
     y_max = max(poly_coeffs)
@@ -41,3 +40,4 @@ for n in [4, 8, 12, 5, 9, 13, 36]:
     ax.invert_xaxis()
     plt.xlabel('Degree')
     plt.ylabel('Coefficient')
+    plt.show()
