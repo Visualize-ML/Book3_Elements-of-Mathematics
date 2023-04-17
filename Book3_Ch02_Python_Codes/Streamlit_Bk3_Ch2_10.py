@@ -115,4 +115,4 @@ try:
     st.pyplot(fig)
     
 except:
-    st.write('The number of rows of the first matrix, must equal the number of columns of the second matrix.')
+    st.write('The number of columns of the first matrix, must equal the number of rows of the second matrix.')
