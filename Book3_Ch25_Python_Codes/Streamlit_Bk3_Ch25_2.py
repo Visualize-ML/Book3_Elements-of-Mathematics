@@ -39,7 +39,7 @@ with st.sidebar:
     
     num_steps = st.slider('Number of nights: ', 
                     min_value = 10,
-                    max_value = 20,
+                    max_value = 30,
                     step = 1)
     
     pi_0 = np.array([[p],
