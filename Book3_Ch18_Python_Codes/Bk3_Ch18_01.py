@@ -58,3 +58,5 @@ integral_a_b_v2 = integrate(f_x, (x, a, b))
 integral_a_b_v2 = float(integral_a_b_v2)
 
 ax.set_title(r'$\int_a^b  f(x) = %0.4f$'%integral_a_b)
+
+plt.show()

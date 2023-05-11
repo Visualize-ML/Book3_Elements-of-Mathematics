@@ -6,7 +6,7 @@
 # Beijing, China, 2022
 ###############
 
-Bk3_Ch18_07.py
+# Bk3_Ch18_07.py
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -143,3 +143,5 @@ plt.gca().spines['right'].set_visible(False)
 plt.gca().spines['top'].set_visible(False)
 plt.xlabel('x')
 plt.ylabel('f(x)')
+
+plt.show()

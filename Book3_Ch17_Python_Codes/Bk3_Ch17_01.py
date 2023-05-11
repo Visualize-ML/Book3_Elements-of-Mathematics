@@ -118,3 +118,5 @@ ax.set_xlim((x_array.min(),x_array.max()))
 
 ax.set_xlim(-3,3)
 ax.set_ylim(-1.25,1.25)
+
+plt.show()
