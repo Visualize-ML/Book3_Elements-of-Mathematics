@@ -1,0 +1,65 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="20">
+            <item index="0" class="java.lang.String" itemvalue="setuptools" />
+            <item index="1" class="java.lang.String" itemvalue="six" />
+            <item index="2" class="java.lang.String" itemvalue="websocket_client" />
+            <item index="3" class="java.lang.String" itemvalue="oss2" />
+            <item index="4" class="java.lang.String" itemvalue="SoundFile" />
+            <item index="5" class="java.lang.String" itemvalue="pydub" />
+            <item index="6" class="java.lang.String" itemvalue="aliyun_python_sdk_core" />
+            <item index="7" class="java.lang.String" itemvalue="numpy" />
+            <item index="8" class="java.lang.String" itemvalue="requests" />
+            <item index="9" class="java.lang.String" itemvalue="pypinyin" />
+            <item index="10" class="java.lang.String" itemvalue="librosa" />
+            <item index="11" class="java.lang.String" itemvalue="websockets" />
+            <item index="12" class="java.lang.String" itemvalue="mkl-fft" />
+            <item index="13" class="java.lang.String" itemvalue="rocketmq" />
+            <item index="14" class="java.lang.String" itemvalue="rocketmq-python-client" />
+            <item index="15" class="java.lang.String" itemvalue="scipy" />
+            <item index="16" class="java.lang.String" itemvalue="flask" />
+            <item index="17" class="java.lang.String" itemvalue="websocket-client" />
+            <item index="18" class="java.lang.String" itemvalue="timm" />
+            <item index="19" class="java.lang.String" itemvalue="pytorch_lightning" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E722" />
+          <option value="E501" />
+          <option value="E303" />
+          <option value="E302" />
+          <option value="E702" />
+          <option value="E701" />
+          <option value="W605" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N806" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="PySide6.QtWidgets.QPushButton.clicked" />
+          <option value="train.global_step" />
+          <option value="train.max_train_steps" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

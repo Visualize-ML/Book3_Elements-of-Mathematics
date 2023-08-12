@@ -19,8 +19,8 @@ xx,yy = np.meshgrid(x,y);
 
 plt.close('all')
 
-zz1 = xx + yy;
-zz2 = 2*xx - yy;
+zz1 = xx + yy
+zz2 = 2*xx - yy
 
 fig = plt.figure()
 ax = fig.gca(projection='3d')
