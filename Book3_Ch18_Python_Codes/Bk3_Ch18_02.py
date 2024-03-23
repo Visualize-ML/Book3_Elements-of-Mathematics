@@ -90,3 +90,5 @@ plt.gca().spines['top'].set_visible(False)
 ax.set_xlabel('x')
 ax.set_ylabel('Integral, F(x)')
 ax.grid(linestyle='--', linewidth=0.25, color=[0.75,0.75,0.75])
+
+plt.show()

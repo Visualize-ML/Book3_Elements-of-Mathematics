@@ -10,6 +10,10 @@
 
 from sympy import oo, erf, lambdify
 import numpy as np
+from matplotlib import pyplot as plt 
+from sympy import *
+
+x = Symbol('x')
 
 x_array = np.linspace(-3,3,100)
 
@@ -30,3 +34,5 @@ plt.gca().spines['top'].set_visible(False)
 ax.set_xlabel('x')
 ax.set_ylabel('erf(x)')
 ax.grid(linestyle='--', linewidth=0.25, color=[0.75,0.75,0.75])
+
+plt.show()
