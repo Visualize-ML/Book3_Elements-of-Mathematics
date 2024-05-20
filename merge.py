@@ -3,16 +3,20 @@
 import os
 import datetime
 
-# pip3 install pypdf 
+# pip3 install pypdf natsort
 from pypdf import PdfWriter, PdfReader, PageRange
+from natsort import natsorted
 
 
-mfname= "book3_Elements_of_Mathematics"
+mfname= "book3_elements_of_mathematics"
 def main():
 
     pdfwrtr = PdfWriter()
     t_pages = 0
     net_start = False
+    
+    pdfs = []
+    
     for r, dirs, files in os.walk("."):
         del dirs[:]
 
@@ -23,17 +27,27 @@ def main():
                 continue 
             if not fitem.startswith("Book"):
                 continue
-            
-            pdfrd = PdfReader(fitem, 'rb')
+ 
+            pdfs.append(fitem)
+             
 
-            meta = pdfrd.metadata 
-            
-            fname = fname.replace("Book3_", "")
-            fname = fname.split("__")[0]
-            fname = fname.replace("_", " ")
-            
-            pdfwrtr.append( pdfrd, fname  )
-            pdfwrtr.add_metadata(meta)
+    pwd = os.getcwd()
+    
+    pdfs = natsorted(pdfs)
+    
+    # print(" ----- ===== ", pdfs)
+    for fitem in pdfs:
+        # print(" ---- === --- ", fitem )
+        fname, fext = os.path.splitext(fitem) 
+
+        fname = fname.replace("Book3_", "")
+        fname = fname.rsplit("__", 2)[0]
+        fname = fname.replace("_", " ")
+        
+        pdfrd = PdfReader(os.path.join(pwd, fitem), 'rb')
+        meta = pdfrd.metadata 
+        pdfwrtr.append( pdfrd, fname  )
+        pdfwrtr.add_metadata(meta)        
     
     now = datetime.datetime.now()
     now_str = now.strftime("%Y.%m.%d_%H_%M_%S")
