@@ -124,3 +124,5 @@ ax.set_xlim(x_array.min(),x_array.max())
 ax.set_ylim(np.floor(error.min()),np.ceil(error.max()))
 ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
+
+plt.show()

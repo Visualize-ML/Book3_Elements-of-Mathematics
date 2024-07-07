@@ -6,7 +6,7 @@
 # Beijing, China, 2022
 ###############
 
-Bk3_Ch18_08.py
+# Bk3_Ch18_08.py
 
 from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
