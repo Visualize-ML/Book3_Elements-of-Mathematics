@@ -253,34 +253,30 @@ colorbar = ax.contour(xx,yy, f_xy_zz,20,
 
 fig.colorbar(colorbar, ax=ax)
 
-for i in range(0,len(CS_y.allsegs[0])):
-
-    contour_points_x_y = CS_y.allsegs[0][i]
-    
-    contour_points_z = f_xy_fcn(contour_points_x_y[:,0],
-                                contour_points_x_y[:,1])
-    
-    
-    ax.plot3D(contour_points_x_y[:,0],
-              contour_points_x_y[:,1], 
-              contour_points_z,
-              color = '#339933',
-              linewidth = 1)
+for path in CS_x.get_paths():
+    for subpath in path._iter_connected_components():
+        contour_points_x_y = subpath.vertices
+        contour_points_z = f_xy_fcn(contour_points_x_y[:, 0],
+                                    contour_points_x_y[:, 1])
+            
+        ax.plot3D(contour_points_x_y[:, 0],
+                    contour_points_x_y[:, 1], 
+                    contour_points_z,
+                    color='#339933',
+                    linewidth=1)
 
 
-for i in range(0,len(CS_x.allsegs[0])):
-
-    contour_points_x_y = CS_x.allsegs[0][i]
-    
-    contour_points_z = f_xy_fcn(contour_points_x_y[:,0],
-                                contour_points_x_y[:,1])
-    
-    
-    ax.plot3D(contour_points_x_y[:,0],
-              contour_points_x_y[:,1], 
-              contour_points_z,
-              color = '#00448A',
-              linewidth = 1)
+for path in CS_y.get_paths():
+    for subpath in path._iter_connected_components():
+        contour_points_x_y = subpath.vertices
+        contour_points_z = f_xy_fcn(contour_points_x_y[:, 0],
+                                    contour_points_x_y[:, 1])
+            
+        ax.plot3D(contour_points_x_y[:, 0],
+                    contour_points_x_y[:, 1], 
+                    contour_points_z,
+                    color='#00448A',
+                    linewidth=1)
     
 ax.set_proj_type('ortho')
 
