@@ -19,7 +19,9 @@ def plot_surf(xx,yy,zz,caption):
     colors = cm.RdYlBu_r(norm_plt(zz))
 
     fig = plt.figure()
-    ax = fig.gca(projection='3d')
+    ax = fig.add_subplot(projection='3d')
+    # ax = plt.axes(projection='3d')
+    
     surf = ax.plot_surface(xx,yy,zz,
                            facecolors=colors, shade=False)
     surf.set_facecolor((0,0,0,0))
