@@ -142,7 +142,7 @@ def plot_surface(xx, yy, surface, title_txt):
     colorbar = ax.contour(xx,yy, surface,20,
                  cmap = 'RdYlBu_r')
     
-    # fig.colorbar(colorbar, ax=ax)
+    fig.colorbar(colorbar, ax=ax)
     
     ax.set_proj_type('ortho')
     
@@ -154,20 +154,19 @@ def plot_surface(xx, yy, surface, title_txt):
     
     ax.view_init(azim=-135, elev=30)
     
-    ax.grid(False)
-    plt.show()
+    ax.grid(False)    
     
-    ax = fig.add_subplot(1, 2, 2)
+    ax2 = fig.add_subplot(1, 2, 2)
     
-    colorbar = ax.contourf(xx,yy, surface, 20, cmap='RdYlBu_r')
+    colorbar = ax2.contourf(xx,yy, surface, 20, cmap='RdYlBu_r')
     
-    # fig.colorbar(colorbar, ax=ax)
+    fig.colorbar(colorbar, ax=ax2)
     
-    ax.set_xlim(xx.min(), xx.max())
-    ax.set_ylim(yy.min(), yy.max())
+    ax2.set_xlim(xx.min(), xx.max())
+    ax2.set_ylim(yy.min(), yy.max())
     
-    ax.set_xlabel('$x_1$')
-    ax.set_ylabel('$x_2$')
+    ax2.set_xlabel('$x_1$')
+    ax2.set_ylabel('$x_2$')
     plt.gca().set_aspect('equal', adjustable='box')
     
     plt.show()
