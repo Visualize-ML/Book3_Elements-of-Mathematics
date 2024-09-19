@@ -121,3 +121,5 @@ ax = sns.heatmap(C,cmap='RdBu_r',vmax = all_max,vmin = all_min,
 ax.set_aspect("equal")
 plt.title('$C$')
 plt.yticks(rotation=0) 
+
+plt.show()
